@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8049993f-bbc5-41be-90bf-cfb87d370a4c" name="Default Changelist" comment="" />
+    <list default="true" id="8049993f-bbc5-41be-90bf-cfb87d370a4c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javaniuniu/netty/chat/ChatClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javaniuniu/netty/chat/ChatClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javaniuniu/netty/chat/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javaniuniu/netty/chat/ChatServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javaniuniu/netty/chat/ClientFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javaniuniu/netty/chat/ClientFrame.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,6 +68,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -200,7 +209,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599406771706</updated>
-      <workItem from="1599406776729" duration="14681000" />
+      <workItem from="1599406776729" duration="15933000" />
+      <workItem from="1599467345519" duration="502000" />
     </task>
     <servers />
   </component>
@@ -213,25 +223,29 @@
     </state>
     <state x="29" y="333" key="#com.intellij.ide.util.MemberChooser/29.23.1411.877@29.23.1411.877" timestamp="1599462722587" />
     <state x="660" y="127" key="#com.intellij.ide.util.MemberChooser/30.23.1410.877@30.23.1410.877" timestamp="1599464869172" />
-    <state width="1365" height="126" key="GridCell.Tab.0.bottom" timestamp="1599465511691">
+    <state width="1365" height="153" key="GridCell.Tab.0.bottom" timestamp="1599467491288">
       <screen x="29" y="23" width="1411" height="877" />
     </state>
-    <state width="1365" height="126" key="GridCell.Tab.0.bottom/29.23.1411.877@29.23.1411.877" timestamp="1599465511691" />
+    <state width="1365" height="184" key="GridCell.Tab.0.bottom/28.23.1412.877@28.23.1412.877" timestamp="1599467303928" />
+    <state width="1365" height="153" key="GridCell.Tab.0.bottom/29.23.1411.877@29.23.1411.877" timestamp="1599467491288" />
     <state width="1365" height="243" key="GridCell.Tab.0.bottom/30.23.1410.877@30.23.1410.877" timestamp="1599465360034" />
-    <state width="1365" height="126" key="GridCell.Tab.0.center" timestamp="1599465511690">
+    <state width="1365" height="153" key="GridCell.Tab.0.center" timestamp="1599467491286">
       <screen x="29" y="23" width="1411" height="877" />
     </state>
-    <state width="1365" height="126" key="GridCell.Tab.0.center/29.23.1411.877@29.23.1411.877" timestamp="1599465511690" />
+    <state width="1365" height="184" key="GridCell.Tab.0.center/28.23.1412.877@28.23.1412.877" timestamp="1599467303927" />
+    <state width="1365" height="153" key="GridCell.Tab.0.center/29.23.1411.877@29.23.1411.877" timestamp="1599467491286" />
     <state width="1365" height="243" key="GridCell.Tab.0.center/30.23.1410.877@30.23.1410.877" timestamp="1599465360033" />
-    <state width="1365" height="126" key="GridCell.Tab.0.left" timestamp="1599465511690">
+    <state width="1365" height="153" key="GridCell.Tab.0.left" timestamp="1599467491286">
       <screen x="29" y="23" width="1411" height="877" />
     </state>
-    <state width="1365" height="126" key="GridCell.Tab.0.left/29.23.1411.877@29.23.1411.877" timestamp="1599465511690" />
+    <state width="1365" height="184" key="GridCell.Tab.0.left/28.23.1412.877@28.23.1412.877" timestamp="1599467303927" />
+    <state width="1365" height="153" key="GridCell.Tab.0.left/29.23.1411.877@29.23.1411.877" timestamp="1599467491286" />
     <state width="1365" height="243" key="GridCell.Tab.0.left/30.23.1410.877@30.23.1410.877" timestamp="1599465360032" />
-    <state width="1365" height="126" key="GridCell.Tab.0.right" timestamp="1599465511691">
+    <state width="1365" height="153" key="GridCell.Tab.0.right" timestamp="1599467491287">
       <screen x="29" y="23" width="1411" height="877" />
     </state>
-    <state width="1365" height="126" key="GridCell.Tab.0.right/29.23.1411.877@29.23.1411.877" timestamp="1599465511691" />
+    <state width="1365" height="184" key="GridCell.Tab.0.right/28.23.1412.877@28.23.1412.877" timestamp="1599467303928" />
+    <state width="1365" height="153" key="GridCell.Tab.0.right/29.23.1411.877@29.23.1411.877" timestamp="1599467491287" />
     <state width="1365" height="243" key="GridCell.Tab.0.right/30.23.1410.877@30.23.1410.877" timestamp="1599465360034" />
     <state x="238" y="100" key="SettingsEditor" timestamp="1599406809274">
       <screen x="33" y="23" width="1407" height="877" />

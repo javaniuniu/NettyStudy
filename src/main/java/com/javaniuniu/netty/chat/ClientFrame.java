@@ -9,6 +9,8 @@ import java.awt.event.ActionListener;
  * @date: 2020/9/7 1:11 PM
  */
 public class ClientFrame extends Frame {
+    public static final  ClientFrame INSTANCE = new ClientFrame();
+
     private TextArea ta = new TextArea();
     private TextField tf = new TextField();
 
@@ -24,22 +26,24 @@ public class ClientFrame extends Frame {
             public void actionPerformed(ActionEvent e) {
                 // 把字符串发射到服务器
                 chatClient.send(tf.getText());
-                ta.setText(ta.getText() + tf.getText());
-
+//                ta.setText(ta.getText() + tf.getText());
                 tf.setText("");
             }
         });
-        this.setVisible(true);
-        connectClientFromServer();
     }
 
-    public void connectClientFromServer() {
+    public void connectToServer() {
         chatClient = new ChatClient();
         chatClient.connect();
     }
+    public void updateText(String msgAccepted) {
+        this.ta.setText(ta.getText() + System.getProperty("line.separator") + msgAccepted);
+    }
 
     public static void main(String[] args) {
-        new ClientFrame();
+        ClientFrame frame = ClientFrame.INSTANCE;
+        frame.setVisible(true);
+        frame.connectToServer();
     }
 }
 

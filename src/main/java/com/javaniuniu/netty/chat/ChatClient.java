@@ -62,7 +62,6 @@ public class ChatClient {
 }
 
 class ClientChannelInitializer extends ChannelInitializer<SocketChannel> {
-
     @Override
     protected void initChannel(SocketChannel ch) throws Exception {
         ch.pipeline().addLast(new ClientChildHandler());
@@ -77,7 +76,8 @@ class ClientChildHandler extends ChannelInboundHandlerAdapter {
             buf = (ByteBuf) msg;
             byte[] bytes = new byte[buf.readableBytes()];
             buf.getBytes(buf.readerIndex(), bytes);
-//            System.out.println(new String(bytes));
+            String msgAccepted = new String(bytes);
+            ClientFrame.INSTANCE.updateText(msgAccepted);
 
 //            System.out.println(buf);
 //            System.out.println(buf.refCnt());
@@ -91,8 +91,7 @@ class ClientChildHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
         // channel 第一次连上可用，写出一个字符串 Direct Memory
-
-//        ByteBuf bf = Unpooled.copiedBuffer("hello".getBytes());//ByteBuf 直接访问系统内存 所以速度很快
-//        ctx.writeAndFlush(bf);// writeAndFlush执行完来之后  会自动清理该系统内存
+        ByteBuf bf = Unpooled.copiedBuffer("hello".getBytes());//ByteBuf 直接访问系统内存 所以速度很快
+        ctx.writeAndFlush(bf);// writeAndFlush执行完来之后  会自动清理该系统内存
     }
 }

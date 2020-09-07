@@ -27,7 +27,7 @@ public class ChatServer {
         try {
             ChannelFuture f =  bootstrap.group(bossGroup,workderGroup)
                     .channel(NioServerSocketChannel.class)
-                    .childHandler(new ClientChannelInitializer2())
+                    .childHandler(new ServerChannelInitializer())
                     .bind(8888)
                     .sync();
             System.out.println("server started...");
@@ -42,18 +42,17 @@ public class ChatServer {
 }
 
 
-class ClientChannelInitializer2 extends ChannelInitializer<SocketChannel> {
+class ServerChannelInitializer extends ChannelInitializer<SocketChannel> {
 
     @Override
     protected void initChannel(SocketChannel ch) throws Exception {
+        System.out.println(ch);
         ChannelPipeline pl = ch.pipeline();
         pl.addLast(new ServerChildHandler());
     }
 }
 
 class ServerChildHandler extends ChannelInboundHandlerAdapter{
-
-
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
         ChatServer.clients.add(ctx.channel());//通道可以用的时候就可以把通道放到通道组里
@@ -84,6 +83,8 @@ class ServerChildHandler extends ChannelInboundHandlerAdapter{
     @Override
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
         cause.printStackTrace();
+        // 当客户端连接中段，需要在服务端将该客户端的channel删除
+        ChatServer.clients.remove(ctx.channel());
         ctx.close();
     }
 }
