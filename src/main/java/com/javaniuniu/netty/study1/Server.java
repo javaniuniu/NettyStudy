@@ -1,4 +1,4 @@
-package com.javaniuniu.netty;
+package com.javaniuniu.netty.study1;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;

@@ -1,4 +1,4 @@
-package com.javaniuniu.netty;
+package com.javaniuniu.netty.study1;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.buffer.ByteBuf;
@@ -24,18 +24,10 @@ public class NettyClient {
             ChannelFuture f = b.group(group)
                     .channel(NioSocketChannel.class)//线程类型
                     .handler(new ClientChannelInitializer())
-                    .connect("localhost", 8888);
-            f.addListener(new ChannelFutureListener() {
-                @Override
-                public void operationComplete(ChannelFuture future) throws Exception {
-                    if (!f.isSuccess()) {
-                        System.out.println("not connect...");
-                    } else {
-                        System.out.println("connect success!");
-                    }
-                }
-            });
-            f.sync();
+                    .connect("localhost", 8888)
+                    .addListener(new ClientChannelFutureListener())
+                    .sync();
+
             System.out.println("client started!");
             f.channel().closeFuture().sync(); // close() -> ChannelFuture closeFuture()会一直阻塞
         } catch (InterruptedException e) {
@@ -81,5 +73,17 @@ class ClientChildHandler extends ChannelInboundHandlerAdapter {
         // channel 第一次连上可用，写出一个字符串 Direct Memory
         ByteBuf bf = Unpooled.copiedBuffer("hello".getBytes());//ByteBuf 直接访问系统内存 所以速度很快
         ctx.writeAndFlush(bf);// writeAndFlush执行完来之后  会自动清理该系统内存
+    }
+}
+
+class ClientChannelFutureListener implements ChannelFutureListener {
+
+    @Override
+    public void operationComplete(ChannelFuture future) throws Exception {
+        if (!future.isSuccess()) {
+            System.out.println("not connect...");
+        } else {
+            System.out.println("connect success!");
+        }
     }
 }

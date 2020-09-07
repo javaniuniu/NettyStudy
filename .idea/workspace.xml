@@ -91,18 +91,50 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/javaniuniu/io" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/javaniuniu/netty/chat" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunManager" selected="Application.NettyClient">
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.javaniuniu.netty.Client" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/javaniuniu/netty/chat" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ChatServer">
+    <configuration name="ChatClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.javaniuniu.netty.chat.ChatClient" />
       <module name="NettyStudy.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.javaniuniu.netty.*" />
+          <option name="PATTERN" value="com.javaniuniu.netty.chat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.javaniuniu.netty.chat.ChatServer" />
+      <module name="NettyStudy.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javaniuniu.netty.chat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.javaniuniu.netty.chat.ClientFrame" />
+      <module name="NettyStudy.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javaniuniu.netty.chat.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,11 +143,11 @@
       </method>
     </configuration>
     <configuration name="NettyClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.javaniuniu.netty.NettyClient" />
+      <option name="MAIN_CLASS_NAME" value="com.javaniuniu.netty.study1.NettyClient" />
       <module name="NettyStudy.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.javaniuniu.netty.*" />
+          <option name="PATTERN" value="com.javaniuniu.netty.study1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,24 +156,11 @@
       </method>
     </configuration>
     <configuration name="NettyServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.javaniuniu.netty.NettyServer" />
+      <option name="MAIN_CLASS_NAME" value="com.javaniuniu.netty.study1.NettyServer" />
       <module name="NettyStudy.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.javaniuniu.netty.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.javaniuniu.netty.Server" />
-      <module name="NettyStudy.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.javaniuniu.netty.*" />
+          <option name="PATTERN" value="com.javaniuniu.netty.study1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,10 +170,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ChatClient" />
+        <item itemvalue="Application.ChatServer" />
+        <item itemvalue="Application.ClientFrame" />
         <item itemvalue="Application.NettyClient" />
         <item itemvalue="Application.NettyServer" />
-        <item itemvalue="Application.Client" />
-        <item itemvalue="Application.Server" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +200,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599406771706</updated>
-      <workItem from="1599406776729" duration="7788000" />
+      <workItem from="1599406776729" duration="14681000" />
     </task>
     <servers />
   </component>
@@ -188,31 +208,31 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="660" y="127" key="#com.intellij.ide.util.MemberChooser" timestamp="1599454358856">
+    <state x="660" y="127" key="#com.intellij.ide.util.MemberChooser" timestamp="1599464869172">
       <screen x="30" y="23" width="1410" height="877" />
     </state>
-    <state x="29" y="333" key="#com.intellij.ide.util.MemberChooser/29.23.1411.877@29.23.1411.877" timestamp="1599446870613" />
-    <state x="660" y="127" key="#com.intellij.ide.util.MemberChooser/30.23.1410.877@30.23.1410.877" timestamp="1599454358856" />
-    <state width="1365" height="227" key="GridCell.Tab.0.bottom" timestamp="1599454925672">
-      <screen x="30" y="23" width="1410" height="877" />
+    <state x="29" y="333" key="#com.intellij.ide.util.MemberChooser/29.23.1411.877@29.23.1411.877" timestamp="1599462722587" />
+    <state x="660" y="127" key="#com.intellij.ide.util.MemberChooser/30.23.1410.877@30.23.1410.877" timestamp="1599464869172" />
+    <state width="1365" height="126" key="GridCell.Tab.0.bottom" timestamp="1599465511691">
+      <screen x="29" y="23" width="1411" height="877" />
     </state>
-    <state width="1365" height="230" key="GridCell.Tab.0.bottom/29.23.1411.877@29.23.1411.877" timestamp="1599445604820" />
-    <state width="1365" height="227" key="GridCell.Tab.0.bottom/30.23.1410.877@30.23.1410.877" timestamp="1599454925672" />
-    <state width="1365" height="227" key="GridCell.Tab.0.center" timestamp="1599454925671">
-      <screen x="30" y="23" width="1410" height="877" />
+    <state width="1365" height="126" key="GridCell.Tab.0.bottom/29.23.1411.877@29.23.1411.877" timestamp="1599465511691" />
+    <state width="1365" height="243" key="GridCell.Tab.0.bottom/30.23.1410.877@30.23.1410.877" timestamp="1599465360034" />
+    <state width="1365" height="126" key="GridCell.Tab.0.center" timestamp="1599465511690">
+      <screen x="29" y="23" width="1411" height="877" />
     </state>
-    <state width="1365" height="230" key="GridCell.Tab.0.center/29.23.1411.877@29.23.1411.877" timestamp="1599445604819" />
-    <state width="1365" height="227" key="GridCell.Tab.0.center/30.23.1410.877@30.23.1410.877" timestamp="1599454925671" />
-    <state width="1365" height="227" key="GridCell.Tab.0.left" timestamp="1599454925670">
-      <screen x="30" y="23" width="1410" height="877" />
+    <state width="1365" height="126" key="GridCell.Tab.0.center/29.23.1411.877@29.23.1411.877" timestamp="1599465511690" />
+    <state width="1365" height="243" key="GridCell.Tab.0.center/30.23.1410.877@30.23.1410.877" timestamp="1599465360033" />
+    <state width="1365" height="126" key="GridCell.Tab.0.left" timestamp="1599465511690">
+      <screen x="29" y="23" width="1411" height="877" />
     </state>
-    <state width="1365" height="230" key="GridCell.Tab.0.left/29.23.1411.877@29.23.1411.877" timestamp="1599445604818" />
-    <state width="1365" height="227" key="GridCell.Tab.0.left/30.23.1410.877@30.23.1410.877" timestamp="1599454925670" />
-    <state width="1365" height="227" key="GridCell.Tab.0.right" timestamp="1599454925672">
-      <screen x="30" y="23" width="1410" height="877" />
+    <state width="1365" height="126" key="GridCell.Tab.0.left/29.23.1411.877@29.23.1411.877" timestamp="1599465511690" />
+    <state width="1365" height="243" key="GridCell.Tab.0.left/30.23.1410.877@30.23.1410.877" timestamp="1599465360032" />
+    <state width="1365" height="126" key="GridCell.Tab.0.right" timestamp="1599465511691">
+      <screen x="29" y="23" width="1411" height="877" />
     </state>
-    <state width="1365" height="230" key="GridCell.Tab.0.right/29.23.1411.877@29.23.1411.877" timestamp="1599445604819" />
-    <state width="1365" height="227" key="GridCell.Tab.0.right/30.23.1410.877@30.23.1410.877" timestamp="1599454925672" />
+    <state width="1365" height="126" key="GridCell.Tab.0.right/29.23.1411.877@29.23.1411.877" timestamp="1599465511691" />
+    <state width="1365" height="243" key="GridCell.Tab.0.right/30.23.1410.877@30.23.1410.877" timestamp="1599465360034" />
     <state x="238" y="100" key="SettingsEditor" timestamp="1599406809274">
       <screen x="33" y="23" width="1407" height="877" />
     </state>
