@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8049993f-bbc5-41be-90bf-cfb87d370a4c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javaniuniu/netty/tank/ChatClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javaniuniu/netty/tank/ChatServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javaniuniu/netty/tank/ClientFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javaniuniu/netty/tank/ServerFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javaniuniu/netty/tank/TankMsg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javaniuniu/netty/tank/TankMsgDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javaniuniu/netty/tank/TankMsgEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/javaniuniu/netty/tank/LibraryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/javaniuniu/netty/tank/TankMsgCodecTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javaniuniu/netty/chat/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javaniuniu/netty/chat/ChatServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,8 +99,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/javaniuniu/io" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/javaniuniu/netty/tank" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -114,6 +108,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/javaniuniu/netty/tank" />
       <recent name="$PROJECT_DIR$/src/main/java/com/javaniuniu/netty/chat" />
     </key>
   </component>
@@ -216,7 +212,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599406771706</updated>
       <workItem from="1599406776729" duration="15933000" />
-      <workItem from="1599467345519" duration="3389000" />
+      <workItem from="1599467345519" duration="4166000" />
     </task>
     <servers />
   </component>
@@ -272,9 +268,10 @@
       <screen x="33" y="23" width="1407" height="877" />
     </state>
     <state x="238" y="100" key="SettingsEditor/33.23.1407.877@33.23.1407.877" timestamp="1599406809274" />
-    <state x="807" y="246" key="chooseDestDirectoryDialog" timestamp="1599442379845">
-      <screen x="30" y="23" width="1410" height="877" />
+    <state x="808" y="246" key="chooseDestDirectoryDialog" timestamp="1599478768862">
+      <screen x="33" y="23" width="1407" height="877" />
     </state>
     <state x="807" y="246" key="chooseDestDirectoryDialog/30.23.1410.877@30.23.1410.877" timestamp="1599442379845" />
+    <state x="808" y="246" key="chooseDestDirectoryDialog/33.23.1407.877@33.23.1407.877" timestamp="1599478768862" />
   </component>
 </project>
