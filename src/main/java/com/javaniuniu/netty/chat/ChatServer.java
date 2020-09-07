@@ -20,7 +20,7 @@ public class ChatServer {
     // 使用通道组 处理通道上的所有默认事件
     public static ChannelGroup clients = new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
 
-    public static void main(String[] args) {
+    public void serverStart() {
         EventLoopGroup bossGroup = new NioEventLoopGroup(1);// 用于客户端连接
         EventLoopGroup workderGroup = new NioEventLoopGroup(2);// 用于事件处理连接
         ServerBootstrap bootstrap = new ServerBootstrap();
@@ -30,7 +30,7 @@ public class ChatServer {
                     .childHandler(new ServerChannelInitializer())
                     .bind(8888)
                     .sync();
-            System.out.println("server started...");
+            ServerFrame.INSTANCE.updateServerMsg("server started!");
             f.channel().closeFuture().sync(); // close() -> ChannelFuture closeFuture()会一直阻塞
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -67,11 +67,12 @@ class ServerChildHandler extends ChannelInboundHandlerAdapter{
             buf.getBytes(buf.readerIndex(),bytes);
             String msgAccepted = new String(bytes);
             if(msgAccepted.equals("_bye_")) {
-                System.out.println("客户的要求退出");
+                ServerFrame.INSTANCE.updateServerMsg("客户要求退出");
                 ChatServer.clients.remove(ctx);
                 ctx.close();
             }else {
                 ChatServer.clients.writeAndFlush(buf); // 使用通道组，将所有客户端传递来的数据都传递出去
+                ServerFrame.INSTANCE.updateClientMsg(msgAccepted);
             }
 //            System.out.println(buf);
 //            System.out.println(buf.refCnt());

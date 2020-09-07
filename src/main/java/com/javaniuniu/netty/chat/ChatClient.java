@@ -39,7 +39,7 @@ public class ChatClient {
             });
             f.sync();
 
-            System.out.println("client started!");
+            ClientFrame.INSTANCE.updateText("client started!!");
             f.channel().closeFuture().sync(); // close() -> ChannelFuture closeFuture()会一直阻塞
         } catch (InterruptedException e) {
             e.printStackTrace();
