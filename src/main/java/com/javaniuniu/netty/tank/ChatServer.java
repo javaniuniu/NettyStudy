@@ -1,7 +1,6 @@
-package com.javaniuniu.netty.chat;
+package com.javaniuniu.netty.tank;
 
 import io.netty.bootstrap.ServerBootstrap;
-import io.netty.buffer.ByteBuf;
 import io.netty.channel.*;
 import io.netty.channel.group.ChannelGroup;
 import io.netty.channel.group.DefaultChannelGroup;
@@ -28,6 +27,7 @@ public class ChatServer {
         try {
             ChannelFuture f = bootstrap.group(bossGroup, workderGroup)
                     .channel(NioServerSocketChannel.class)
+
                     .childHandler(new ServerChannelInitializer())
                     .bind(8888)
                     .sync();
@@ -49,7 +49,8 @@ class ServerChannelInitializer extends ChannelInitializer<SocketChannel> {
     protected void initChannel(SocketChannel ch) throws Exception {
         System.out.println(ch);
         ChannelPipeline pl = ch.pipeline();
-        pl.addLast(new ServerChildHandler()); // 在做相应的业务处理
+        pl.addLast(new TankMsgDecoder()) // 先加自定义的handler 做解包
+                .addLast(new ServerChildHandler()); // 在做相应的业务处理
     }
 }
 
@@ -61,27 +62,35 @@ class ServerChildHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
-        ByteBuf buf = null;
-        try {
-            buf = (ByteBuf) msg;
-            byte[] bytes = new byte[buf.readableBytes()];
-            buf.getBytes(buf.readerIndex(), bytes);
-            String msgAccepted = new String(bytes);
-            if (msgAccepted.equals("_bye_")) {
-                ServerFrame.INSTANCE.updateServerMsg("客户要求退出");
-                ChatServer.clients.remove(ctx);
-                ctx.close();
-            } else {
-                ChatServer.clients.writeAndFlush(buf); // 使用通道组，将所有客户端传递来的数据都传递出去
-                ServerFrame.INSTANCE.updateClientMsg(msgAccepted);
-            }
-//            System.out.println(buf);
-//            System.out.println(buf.refCnt());
 
+        try {
+            TankMsg tm = (TankMsg) msg; // 使用解码 直接将msg转化成 TankMsg 所以可以直接用
+            ServerFrame.INSTANCE.updateClientMsg(tm.toString());
         } finally {
-//            if (buf !=null) ReferenceCountUtil.release(buf);
-//            System.out.println(buf.refCnt());
+            ReferenceCountUtil.release(msg);
         }
+
+//        ByteBuf buf = null;
+//        try {
+//            buf = (ByteBuf) msg;
+//            byte[] bytes = new byte[buf.readableBytes()];
+//            buf.getBytes(buf.readerIndex(), bytes);
+//            String msgAccepted = new String(bytes);
+//            if (msgAccepted.equals("_bye_")) {
+//                ServerFrame.INSTANCE.updateServerMsg("客户要求退出");
+//                ChatServer.clients.remove(ctx);
+//                ctx.close();
+//            } else {
+//                ChatServer.clients.writeAndFlush(buf); // 使用通道组，将所有客户端传递来的数据都传递出去
+//                ServerFrame.INSTANCE.updateClientMsg(msgAccepted);
+//            }
+////            System.out.println(buf);
+////            System.out.println(buf.refCnt());
+//
+//        } finally {
+////            if (buf !=null) ReferenceCountUtil.release(buf);
+////            System.out.println(buf.refCnt());
+//        }
     }
 
     // 当通道上出现任何异常，把ctx关闭掉
