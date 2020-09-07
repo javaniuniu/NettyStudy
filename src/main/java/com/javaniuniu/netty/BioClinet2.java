@@ -19,7 +19,7 @@ import io.netty.util.concurrent.GenericFutureListener;
  * 要么使用监听，通过状态来判断，以做相应的处理
  *
  */
-public class Clinet2 {
+public class BioClinet2 {
     public static void main(String[] args) {
         //事件处理线程池
         EventLoopGroup group = new NioEventLoopGroup(1);//1表示一个线程
