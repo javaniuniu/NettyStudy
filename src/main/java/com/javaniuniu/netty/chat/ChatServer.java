@@ -65,11 +65,14 @@ class ServerChildHandler extends ChannelInboundHandlerAdapter{
             buf =  (ByteBuf) msg;
             byte[] bytes = new byte[buf.readableBytes()];
             buf.getBytes(buf.readerIndex(),bytes);
-            System.out.println(new String(bytes));
-
-//            ctx.writeAndFlush(buf); // 这里有关闭操作 所以 finally 不需要在关闭
-            ChatServer.clients.writeAndFlush(buf); // 使用通道组，将所有客户端传递来的数据都传递出去
-
+            String msgAccepted = new String(bytes);
+            if(msgAccepted.equals("_bye_")) {
+                System.out.println("客户的要求退出");
+                ChatServer.clients.remove(ctx);
+                ctx.close();
+            }else {
+                ChatServer.clients.writeAndFlush(buf); // 使用通道组，将所有客户端传递来的数据都传递出去
+            }
 //            System.out.println(buf);
 //            System.out.println(buf.refCnt());
 

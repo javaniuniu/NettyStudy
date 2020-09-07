@@ -3,6 +3,8 @@ package com.javaniuniu.netty.chat;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 /**
  * @auther: javaniuniu
@@ -29,6 +31,15 @@ public class ClientFrame extends Frame {
 //                ta.setText(ta.getText() + tf.getText());
                 tf.setText("");
             }
+        });
+        this.addWindowListener(new WindowAdapter() {
+
+            @Override
+            public void windowClosing(WindowEvent e) {
+                chatClient.closeConnect();
+                System.exit(0);
+            }
+
         });
     }
 

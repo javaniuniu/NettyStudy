@@ -59,6 +59,9 @@ public class ChatClient {
     }
 
 
+    public void closeConnect() {
+        this.send("_bye_");
+    }
 }
 
 class ClientChannelInitializer extends ChannelInitializer<SocketChannel> {
