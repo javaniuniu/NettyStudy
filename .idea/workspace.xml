@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8049993f-bbc5-41be-90bf-cfb87d370a4c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="NettyStudy" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="NettyStudy" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="NettyStudy" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="NettyStudy" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$USER_HOME$/env_set/apache-maven-3.6.1" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="1.8" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1h8xy53rxu0KR2P1MKfbc0QrqNd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/javaniuniu/io" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RunManager" selected="Application.Client">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.javaniuniu.netty.Client" />
+      <module name="NettyStudy.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javaniuniu.netty.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.javaniuniu.netty.Server" />
+      <module name="NettyStudy.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javaniuniu.netty.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.Server" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8049993f-bbc5-41be-90bf-cfb87d370a4c" name="Default Changelist" comment="" />
+      <created>1599406771706</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599406771706</updated>
+      <workItem from="1599406776729" duration="4093000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="29" y="333" key="#com.intellij.ide.util.MemberChooser" timestamp="1599446870613">
+      <screen x="29" y="23" width="1411" height="877" />
+    </state>
+    <state x="29" y="333" key="#com.intellij.ide.util.MemberChooser/29.23.1411.877@29.23.1411.877" timestamp="1599446870613" />
+    <state width="1365" height="230" key="GridCell.Tab.0.bottom" timestamp="1599445604820">
+      <screen x="29" y="23" width="1411" height="877" />
+    </state>
+    <state width="1365" height="230" key="GridCell.Tab.0.bottom/29.23.1411.877@29.23.1411.877" timestamp="1599445604820" />
+    <state width="1365" height="230" key="GridCell.Tab.0.center" timestamp="1599445604819">
+      <screen x="29" y="23" width="1411" height="877" />
+    </state>
+    <state width="1365" height="230" key="GridCell.Tab.0.center/29.23.1411.877@29.23.1411.877" timestamp="1599445604819" />
+    <state width="1365" height="230" key="GridCell.Tab.0.left" timestamp="1599445604818">
+      <screen x="29" y="23" width="1411" height="877" />
+    </state>
+    <state width="1365" height="230" key="GridCell.Tab.0.left/29.23.1411.877@29.23.1411.877" timestamp="1599445604818" />
+    <state width="1365" height="230" key="GridCell.Tab.0.right" timestamp="1599445604819">
+      <screen x="29" y="23" width="1411" height="877" />
+    </state>
+    <state width="1365" height="230" key="GridCell.Tab.0.right/29.23.1411.877@29.23.1411.877" timestamp="1599445604819" />
+    <state x="238" y="100" key="SettingsEditor" timestamp="1599406809274">
+      <screen x="33" y="23" width="1407" height="877" />
+    </state>
+    <state x="238" y="100" key="SettingsEditor/33.23.1407.877@33.23.1407.877" timestamp="1599406809274" />
+    <state x="807" y="246" key="chooseDestDirectoryDialog" timestamp="1599442379845">
+      <screen x="30" y="23" width="1410" height="877" />
+    </state>
+    <state x="807" y="246" key="chooseDestDirectoryDialog/30.23.1410.877@30.23.1410.877" timestamp="1599442379845" />
+  </component>
+</project>
